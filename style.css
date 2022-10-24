@@ -11,17 +11,6 @@ body {
   height: 100vh;
   background-color: aqua;
 }
-.bg {
-  width: 50%;
-  height: 50%;
-  background-color: brown;
-}
-.menu {
-  width: 80%;
-  height: 100vh;
-  padding: 10;
-  background-color: rgb(213, 140, 140);
-}
 .dialogue-container {
   position: absolute;
   left: 0;
