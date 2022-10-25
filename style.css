@@ -2,6 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  font-family: inherit;
 }
 body {
   margin: 0;
@@ -13,6 +14,7 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 #bg {
   position: absolute;
@@ -24,24 +26,46 @@ body {
 .main-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   color: white;
 }
+.main-menu-wrapper {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
 .main-menu-title {
-  font-size: 7rem;
+  font-size: 8rem;
+  font-weight: 100;
   margin: 0;
-  margin-top: 2rem;
+}
+.main-menu-title-sup {
+  font-size: 2rem;
+  color: pink;
 }
 .main-menu-subtitle {
   font-size: 2rem;
   margin: 0;
-  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 200;
+}
+.main-menu-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 1rem;
+  align-items: flex-start;
 }
 .main-menu-button {
-  margin-top: 2rem;
-  padding: 0.5rem 2rem;
-  font-size: 2rem;
-  font-weight: 400;
+  border: none;
+  font-size: 3rem;
+  font-weight: 300;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: transform ease-in-out 200ms;
+}
+.main-menu-button:hover {
+  transform: scale(1.1);
 }
 .bg-video {
   object-fit: cover;
