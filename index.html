@@ -7,22 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</poprocks ></title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./index.js" defer></script>
   </head>
   <!---->
   <body>
     <div id="game">
       <div class="main-menu">
-        <h1 class="main-menu-title">poprocks</h1>
-        <h3 class="main-menu-subtitle">porocks beta</h3>
-        <button class="main-menu-button">Play</button>
+        <div class="main-menu-wrapper">
+          <h1 class="main-menu-title">
+            poprocks<sup class="main-menu-title-sup">beta</sup>
+          </h1>
+          <!-- <h3 class="main-menu-subtitle"></h3> -->
+          <div class="main-menu-buttons">
+            <button class="main-menu-button">New Game</button>
+            <button class="main-menu-button">Continue</button>
+            <button class="main-menu-button">Credits</button>
+          </div>
+        </div>
       </div>
       <div id="bg">
         <video width="100%" autoplay loop class="bg-video">
           <source src="./public/HomeAnimation.mov" type="video/mp4" />
         </video>
       </div>
-      <div class="dialogue-container">
+      <div class="dialogue-container" hidden>
         <div class="dialogue">
           <p>I am tired today..</p>
         </div>
