@@ -28,7 +28,6 @@ function dialogueTest() {
     const randomLetter = String.fromCharCode(getRandomInt(65, 90));
     randomText += randomLetter;
   }
-  console.log({ randomText });
   displayDialogue(randomText);
 }
 
